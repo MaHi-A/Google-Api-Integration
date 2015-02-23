@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20150220053620) do
     t.datetime "updated_at"
   end
 
+  add_index "users", ["uid"], name: "index_users_on_uid", unique: true
+
   create_table "videos", force: true do |t|
     t.string   "link"
     t.string   "title"
