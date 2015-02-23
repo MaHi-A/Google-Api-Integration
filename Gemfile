@@ -44,3 +44,6 @@ gem 'active_type', '0.3.1'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development do
+  gem 'sqlite3'
+end
